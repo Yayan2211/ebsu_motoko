@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "dcToken_backend": {
+      "main": "src/dcToken_backend/main.mo",
+      "type": "motoko"
+    },
+    "dcToken_frontend": {
+      "dependencies": [
+        "dcToken_backend"
+      ],
+      "source": [
+        "src/dcToken_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "dcToken_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
